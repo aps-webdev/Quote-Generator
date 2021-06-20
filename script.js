@@ -37,7 +37,7 @@ const newQuote = () => {
   loading();
   let idx = Math.floor(Math.random() * apiQuotes.length);
   const quote = apiQuotes[idx];
-  authorText.textContent = quote.author ?? 'Unknown';
+  authorText.textContent = '-' + quote.author ?? 'Unknown';
   quote.text.length > 120
     ? quoteText.classList.add('long-quote')
     : quoteText.classList.remove('long-quote');
