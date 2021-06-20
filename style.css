@@ -81,6 +81,35 @@ button:active {
   font-size: 1.5rem;
 }
 
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #333;
+  width: 120px;
+  height: 120px;
+  animation: spin 1.5s linear infinite;
+  -webkit-animation: spin 1.5s linear infinite; /* Safari */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .quote-container {
     margin: auto 10px;
